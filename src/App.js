@@ -1,6 +1,8 @@
 import './App.css';
 import customTheme from './customTheme'
 import Header from './components/Header'
+import colors from './components/colors'
+
 
 // import Chakra
 import React from "react";
@@ -16,7 +18,14 @@ function App() {
     <ThemeProvider className="App" theme={customTheme} >
       <Box >
         <Header >header</Header>
-          <Box></Box>
+          <Box>
+            <Box 
+              bg={colors.brandMiddle}
+              width= '150px'>
+                Hello
+            </Box>
+
+          </Box>
       </Box>
     </ThemeProvider>
   );
