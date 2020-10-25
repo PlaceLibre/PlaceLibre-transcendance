@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    height: 70px;
+    direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 0 10px #000000;
+}
+
+.logo{
+    height: 60px;
+}
