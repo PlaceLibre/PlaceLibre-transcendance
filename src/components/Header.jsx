@@ -17,6 +17,11 @@ class Header extends Component {
                     direction='row'
                     justifyContent= 'space-between'
                     alignItems= 'center'
+                    zIndex={100}
+                    position="fixed"
+                    top='0px'
+                    left='0px'
+                    right='0px'
                     boxShadow= '0 0 10px #000000'>
                         <Box
                         display= 'flex'

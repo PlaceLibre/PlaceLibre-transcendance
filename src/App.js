@@ -1,6 +1,8 @@
 import './App.css';
 import customTheme from './customTheme'
 import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import Explore from './components/Explore'
 import colors from './components/colors'
 
 
@@ -17,15 +19,11 @@ function App() {
   return (
     <ThemeProvider className="App" theme={customTheme} >
       <Box >
-        <Header >header</Header>
-          <Box>
-            <Box 
-              bg={colors.brandMiddle}
-              width= '150px'>
-                Hello
-            </Box>
-
-          </Box>
+        <Header/>
+        <Box>
+          <Sidebar/>
+          <Explore/>
+        </Box>
       </Box>
     </ThemeProvider>
   );
