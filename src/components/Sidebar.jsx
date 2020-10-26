@@ -12,6 +12,7 @@ class Sidebar extends Component {
                 width= '150px'
                 position='fixed'
                 left='0px'
+                top='80px'
                 zIndex={10}
                 height= '100vh'>
                 Hello

@@ -1,8 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import { Box, Image, Icon } from "@chakra-ui/core";
+import { Box, Image } from "@chakra-ui/core";
+import { Icon } from "@chakra-ui/core";
 import { Avatar, AvatarBadge } from "@chakra-ui/core";
+import {PhoneIcon, AddIcon, WarningIcon} from '@chakra-ui/icons'
+import { AdminIcon, HomeIcon } from './ownIcons'
+
 import colors from './colors'
-import './Header.css'
+
 
 
 class Header extends Component {
@@ -22,7 +26,8 @@ class Header extends Component {
                     top='0px'
                     left='0px'
                     right='0px'
-                    boxShadow= '0 0 10px #000000'>
+                    boxShadow= '0 0 10px #000000'
+                    height='80px'>
                         <Box
                         display= 'flex'
                         direction='row'
@@ -32,7 +37,7 @@ class Header extends Component {
                                 className='logo' 
                                 src="assets/logo14.png" 
                                 alt="logo" 
-                                height='70px'/>
+                                height='50px'/>
                             <Avatar
                                 height='40px'
                                 width='40px'
@@ -51,17 +56,12 @@ class Header extends Component {
                                     <Box fontWeight='600'>{userName}</Box>
                             </Box>
                         </Box>
-                        <Box>
-                            <Image 
-                                height='50px' 
-                                src='assets/noun_admin_975453.png' 
-                                alt='home'/>
-                            <Image 
-                                height='50px' 
-                                src='assets/noun_Home_77002.png' 
-                                alt='home'/>
-                            <Icon name="noun_admin_975453" color={colors.brandLight} size="40px"/>
-                            <Icon name="noun_Home_77002" color={colors.brandLight} size="40px"/>
+                        <Box
+                            display='flex'
+                            direction='row'
+                            alignItems= 'center'>
+                            <AdminIcon color={colors.brandLight}  boxSize={8} margin='5px'/>
+                            <HomeIcon color={colors.brandLight}  boxSize={8} margin='5px'/>
                         </Box>
                 </Box>
         )

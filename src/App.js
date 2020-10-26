@@ -8,7 +8,7 @@ import colors from './components/colors'
 
 // import Chakra
 import React from "react";
-import { ThemeProvider } from "@chakra-ui/core";
+import { ChakraProvider } from "@chakra-ui/core";
 import { Box } from "@chakra-ui/core";
 
 // Use at the root of your app
@@ -17,7 +17,7 @@ import { Box } from "@chakra-ui/core";
 function App() {
 
   return (
-    <ThemeProvider className="App" theme={customTheme} >
+    <ChakraProvider theme={customTheme} >
       <Box >
         <Header/>
         <Box>
@@ -25,7 +25,7 @@ function App() {
           <Explore/>
         </Box>
       </Box>
-    </ThemeProvider>
+    </ChakraProvider>
   );
 }
 
