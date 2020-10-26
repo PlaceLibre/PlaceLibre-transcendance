@@ -1,27 +1,86 @@
-import { theme } from "@chakra-ui/core";
+import { extendTheme } from "@chakra-ui/core"
 
 
+const customColors={
+  brand: '#FFC000',
+  brandBlack: '#4D4C4C',
+  brandDark: '#736E61',
+  brandMiddle: '#E4E1D7',
+  brandLight: '#FAF8F2',
+  brandVariant: {
+    50: '#fff9da',
+    100: '#ffecad',
+    200: '#ffe07d',
+    300: '#ffd34b',
+    400: '#ffc61a',
+    500: '#e6ad00', //#6ad00
+    600: '#b38600',
+    700: '#806000',
+    800: '#4e3a00',
+    900: '#1d1300',
+    },
+};
 
-const customTheme = {
-    ...theme,
-    colors: {
-      ...theme.colors,
-      brand: {
-        50: '#fff9da',
-        100: '#ffecad',
-        200: '#ffe07d',
-        300: '#ffd34b',
-        400: '#ffc61a',
-        500: '#e6ad00', //#6ad00
-        600: '#b38600',
-        700: '#806000',
-        800: '#4e3a00',
-        900: '#1d1300',
+const customThemeColor = extendTheme({
+  colors: customColors
+});
+
+
+const customTheme = extendTheme({
+  colors: customColors,
+  styles: {
+    global: {
+      "html, body": {
+        fontSize: "sm",
+        color: customThemeColor.colors.gray[700],
+        lineHeight: "tall",
+        fontFamily: 'Ubuntu, sans-serif'
+      },
+      a: {
+        color: "teal.500",
+      },
+      button: {
+        fontWeight: 'bold'
       },
     },
+  },
+  components: {
+    Tabs: {
+      variants:{
+        brandVariant:{
+          tablist: {
+            borderBottom: "1px solid",
+            borderColor: customThemeColor.colors.brandDark,
+          },
+          tab: {
+            color: customThemeColor.colors.brandDark,
+            borderBottom: "1px solid",
+            borderColor: "transparent",
+            mb: "-1px",
+            _selected: {
+              color: customThemeColor.colors.brand,
+              borderColor: customThemeColor.colors.brand,
+            },
+            _hover: {
+              color: customThemeColor.colors.brand,
+              borderColor: customThemeColor.colors.brand,
+            },
+            _disabled: {
+              opacity: 0.4,
+              cursor: "not-allowed",
+            },
+          },
+        },
+      
+      },
+    },
+  },
+  shadows:{
+    outline: `inset 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,
+  },
     fonts: {
-      body: "system-ui, sans-serif",
-      heading: "Georgia, serif",
+      body: "Ubuntu, sans-serif",
+      heading: "Ubuntu, sans-serif",
       mono: "Menlo, monospace",
     },
     fontSizes: {
@@ -58,7 +117,7 @@ const customTheme = {
       wider: "0.05em",
       widest: "0.1em",
     },
-  };
+  });
 
   export default customTheme;
 

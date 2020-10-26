@@ -3,8 +3,9 @@ import { Box, Image } from "@chakra-ui/core";
 import { Icon } from "@chakra-ui/core";
 import { Avatar, AvatarBadge } from "@chakra-ui/core";
 import {PhoneIcon, AddIcon, WarningIcon} from '@chakra-ui/icons'
-import { AdminIcon, HomeIcon } from './ownIcons'
 
+//own
+import { AdminIcon, HomeIcon } from './ownIcons'
 import colors from './colors'
 
 
@@ -16,7 +17,7 @@ class Header extends Component {
 
         return (
                 <Box 
-                    bg={colors.brandDark} 
+                    bg= "brandDark"
                     display= 'flex'
                     direction='row'
                     justifyContent= 'space-between'
@@ -26,7 +27,7 @@ class Header extends Component {
                     top='0px'
                     left='0px'
                     right='0px'
-                    boxShadow= '0 0 10px #000000'
+                    boxShadow= '0 0 10px #999999'
                     height='80px'>
                         <Box
                         display= 'flex'
@@ -35,9 +36,10 @@ class Header extends Component {
                         alignItems= 'center'>
                             <Image
                                 className='logo' 
-                                src="assets/logo14.png" 
+                                src="assets/logo_14_small.png"
                                 alt="logo" 
-                                height='50px'/>
+                                height='50px'
+                                marginLeft='10px'/> 
                             <Avatar
                                 height='40px'
                                 width='40px'
@@ -49,7 +51,6 @@ class Header extends Component {
                                 bg={colors.brand}
                                 color={colors.brandDark}/>
                             <Box 
-                                color='white' 
                                 marginLeft='10px'
                                 color={colors.brandLight}                                >
                                     <Box fontWeight='50' >Bienvenue!</Box>
