@@ -35,10 +35,9 @@ class Header extends Component {
                         justifyContent= 'space-between'
                         alignItems= 'center'>
                             <Image
-                                className='logo' 
-                                src="assets/logo_14_small.png"
+                                src="assets/LOGO_PlaceLibre_SVG_1.svg" 
                                 alt="logo" 
-                                height='50px'
+                                height='30px'
                                 marginLeft='10px'/> 
                             <Avatar
                                 height='40px'
