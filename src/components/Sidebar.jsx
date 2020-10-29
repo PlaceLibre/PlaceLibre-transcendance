@@ -15,7 +15,7 @@ class Sidebar extends Component {
                 top='80px'
                 zIndex={10}
                 height= '100vh'>
-                Hello
+                
                 
             </Box>
         )
