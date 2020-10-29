@@ -18,7 +18,7 @@ function App() {
 
   return (
     <ChakraProvider theme={customTheme} >
-      <Box bg='brandLight' height='100vh'>
+      <Box bg='brandLight'>
         <Header/>
         <Box>
           <Sidebar/>

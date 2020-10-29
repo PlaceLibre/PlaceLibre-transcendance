@@ -9,6 +9,8 @@ import { BsSearch } from "react-icons/bs";
 
 import { AnchorIcon } from './ownIcons'
 import  causesList  from './causesList'
+import TitleWithIcon from './TitleWithIcon'
+
 
 
 
@@ -22,10 +24,7 @@ class CausesFilter extends Component {
 
         return (
             <Box marginTop='2em'>
-                <Box display= 'flex' direction='row' alignItems='center' marginBottom='10px'>
-                    <AnchorIcon color='brandDark' boxSize={8} marginRight='10px'></AnchorIcon>
-                    <Heading as='h5' size='sm' color='brandDark'>Select a cause</Heading>
-                </Box>
+                <TitleWithIcon color='brandDark' iconComponent={AnchorIcon} title='Select a cause'/>
                 <Grid gridAutoFlow= 'column' templateRows="repeat(5, auto)" templateColumns="repeat(2, auto)" gap={2} >
                     {causesCheckboxes}
                 </Grid>

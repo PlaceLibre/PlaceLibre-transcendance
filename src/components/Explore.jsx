@@ -6,6 +6,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core"
 //own
 import colors from './colors'
 import CausesFilter from './CausesFilter'
+import IntentionCards from './IntentionCards'
 
 class Explore extends Component {
     render () {
@@ -27,6 +28,7 @@ class Explore extends Component {
                         <TabPanels >
                             <TabPanel>
                                 <CausesFilter/>
+                                <IntentionCards/>
                             </TabPanel>
                             <TabPanel>
                             <p>two!</p>
