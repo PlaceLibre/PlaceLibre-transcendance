@@ -1,4 +1,4 @@
- const causes=[
+ const causesList=[
     "Alimentation",
     'Energie',
     'consomation des ressources naturelles',
@@ -7,6 +7,6 @@
     'Justice',
     'Conscience et spiritualité',
     'Economie circulaire',
-]
+];
 
-export default causes
+export default causesList

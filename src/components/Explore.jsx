@@ -5,6 +5,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core"
 
 //own
 import colors from './colors'
+import CausesFilter from './CausesFilter'
 
 class Explore extends Component {
     render () {
@@ -16,8 +17,8 @@ class Explore extends Component {
                 marginTop='80px'
                 marginLeft='150px'>
                     
-                    <Tabs  variant='brandVariant' marginTop='20px'>
-                        <TabList >
+                    <Tabs  variant='brandVariant' marginTop='20px' >
+                        <TabList justifyContent= 'center'>
                             <Tab >Explorer</Tab>
                             <Tab>Mon espace</Tab>
                             <Tab>Contributeurs</Tab>
@@ -25,7 +26,7 @@ class Explore extends Component {
 
                         <TabPanels >
                             <TabPanel>
-                            <Heading>Ceci est un titre</Heading>
+                                <CausesFilter/>
                             </TabPanel>
                             <TabPanel>
                             <p>two!</p>

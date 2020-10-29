@@ -1,7 +1,6 @@
 import { extendTheme } from "@chakra-ui/core"
 
-
-const customColors={
+/*const customColors={
   brand: '#FFC000',
   brandBlack: '#4D4C4C',
   brandDark: '#736E61',
@@ -13,11 +12,34 @@ const customColors={
     200: '#ffe07d',
     300: '#ffd34b',
     400: '#ffc61a',
-    500: '#e6ad00', //#6ad00
+    500: '#e6ad00', 
     600: '#b38600',
     700: '#806000',
     800: '#4e3a00',
     900: '#1d1300',
+    },
+};*/
+
+const customColors={
+  brand: '#FFC000',
+  brandBlack: '#4D4C4C',
+  brandDark: '#736E61',
+  brandMiddle: '#E4E1D7',
+  brandLight: '#FAF8F2',
+  brandVariant: {
+    50: '#FFF5D6',
+    100: '#FEECB4',
+    200: '#FFE492',
+    300: '#FFD967',
+    400: '#FFD144',
+    500: '#FFC000', 
+    600: '#EDB200',
+    700: '#D8AC26',
+    800: '#B29333',
+    900: '#816F3B',
+    1000: '#5F563A',
+    1100: '#4D4634',
+    1200: '#343127',
     },
 };
 
@@ -50,12 +72,12 @@ const customTheme = extendTheme({
         brandVariant:{
           tablist: {
             borderBottom: "1px solid",
-            borderColor: customThemeColor.colors.brandDark,
+            borderColor: "transparent",
           },
           tab: {
             color: customThemeColor.colors.brandDark,
             borderBottom: "1px solid",
-            borderColor: "transparent",
+            borderColor: "customThemeColor.colors.brandDark",
             mb: "-1px",
             _selected: {
               color: customThemeColor.colors.brand,
@@ -76,7 +98,7 @@ const customTheme = extendTheme({
     },
   },
   shadows:{
-    outline: `inset 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,
+    outline: ` 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,
   },
     fonts: {
       body: "Ubuntu, sans-serif",
