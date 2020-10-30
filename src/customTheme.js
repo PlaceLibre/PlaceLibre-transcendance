@@ -26,21 +26,33 @@ const customColors={
   brandDark: '#736E61',
   brandMiddle: '#E4E1D7',
   brandLight: '#FAF8F2',
-  brandVariant: {
+  brand: {
     50: '#FFF5D6',
     100: '#FEECB4',
     200: '#FFE492',
     300: '#FFD967',
     400: '#FFD144',
     500: '#FFC000', 
-    600: '#EDB200',
-    700: '#D8AC26',
-    800: '#B29333',
-    900: '#816F3B',
-    1000: '#5F563A',
-    1100: '#4D4634',
-    1200: '#343127',
+    600: '#ECB200',
+    700: '#D19E00',
+    800: '#A37A00',
+    900: '#715500',
+    1000: '#4E3A00',
     },
+    brandGray: {
+      25: '#FAF8F2',
+      50: '#F6F2E6',
+      100: '#F4ECD1',
+      200: '#EDE0BB',
+      300: '#D7CAA4',
+      400: '#B2A786',
+      500: '#8C8262', 
+      600: '#776E51',
+      700: '#605945',
+      800: '#4E4838',
+      900: '#393528',
+      1000: '#27251C',
+      },
 };
 
 const customThemeColor = extendTheme({
@@ -76,17 +88,17 @@ const customTheme = extendTheme({
             borderColor: "transparent",
           },
           tab: {
-            color: customThemeColor.colors.brandDark,
+            color: customThemeColor.colors.brandGray[400],
             borderBottom: "2px solid",
-            borderColor: customThemeColor.colors.brandDark,
+            borderColor: customThemeColor.colors.brandGray[400],
             mb: "-2px",
             _selected: {
-              color: customThemeColor.colors.brand,
-              borderColor: customThemeColor.colors.brand,
+              color: customThemeColor.colors.brandGray[700],
+              borderColor: customThemeColor.colors.brandGray[700],
             },
             _hover: {
-              color: customThemeColor.colors.brand,
-              borderColor: customThemeColor.colors.brand,
+              color: customThemeColor.colors.brand[500],
+              borderColor: customThemeColor.colors.brand[500],
             },
             _disabled: {
               opacity: 0.4,
@@ -107,7 +119,7 @@ const customTheme = extendTheme({
     }
   },
   shadows:{
-    outline: ` 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,
+    outline: ` 0 0 2px 2px ${customThemeColor.colors.brandGray[100]}`,
   },
     fonts: {
       body: "Roboto, sans-serif",

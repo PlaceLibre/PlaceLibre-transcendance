@@ -15,7 +15,7 @@ const IconButtonSlider = (props) => {
     function onMouseOut (e) {
         setHovered(false)
     }
-    const text=hovered ? <Text color='brandDark' paddingRight='5px' paddingLeft='5px' fontWeight='600' fontSize='sm'> {props.title} </Text> : ""
+    const text=hovered ? <Text color='brandGray.700' paddingRight='5px' paddingLeft='5px' fontWeight='600' fontSize='sm'> {props.title} </Text> : ""
     
     return (
         <Box 
@@ -24,14 +24,16 @@ const IconButtonSlider = (props) => {
         alignItems='center' 
         marginBottom='10px'
         borderWidth='3px'
-        borderColor='brandDark'
+        borderColor='brandGray.700'
         borderRadius='999px'
         padding='5px'
+        //backgroundColor='white' 
+        //boxShadow='3px 3px 5px 3px #cccccc'
         onMouseOver= {onMouseOver}
         onMouseOut = {onMouseOut}
         >
             {text}
-            {cloneElement(props.icon, {color:'brandDark', boxSize:'4'})}
+            {cloneElement(props.icon, {color:'brandGray.700', boxSize:'4'})}
         </Box>
     )
 }

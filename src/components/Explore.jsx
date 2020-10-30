@@ -19,7 +19,7 @@ class Explore extends Component {
                 marginLeft='150px'
                 minHeight = '100vh'>
                     
-                    <Tabs  variant='brandVariant' marginTop='20px' >
+                    <Tabs  variant='brandVariant' marginTop='20px' maxWidth='1000px'>
                         <TabList justifyContent= 'center'>
                             <Tab >EXPLORER</Tab>
                             <Tab>MON ESPACE</Tab>
