@@ -1,8 +1,8 @@
  const causesList=[
     "Alimentation",
     'Energie',
-    'consomation des ressources naturelles',
-    'gestion des dechets',
+    'Consomation des ressources naturelles',
+    'Gestion des dechets',
     'Gouvernance et démocratie',
     'Justice',
     'Conscience et spiritualité',

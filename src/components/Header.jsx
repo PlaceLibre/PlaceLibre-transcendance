@@ -41,7 +41,7 @@ class Header extends Component {
                             <Avatar
                                 height='40px'
                                 width='40px'
-                                marginLeft= '10px'
+                                marginLeft= '30px'
                                 name='userName'
                                 src={userAvatarPath}
                                 borderColor= 'white'
@@ -58,9 +58,10 @@ class Header extends Component {
                         <Box
                             display='flex'
                             direction='row'
-                            alignItems= 'center'>
-                            <AdminIcon color={colors.brandLight}  boxSize={8} margin='5px'/>
-                            <HomeIcon color={colors.brandLight}  boxSize={8} margin='5px'/>
+                            alignItems= 'center'
+                            marginRight='1em'>
+                            <AdminIcon color={colors.brandLight}  boxSize={10} margin='5px'/>
+                            <HomeIcon color={colors.brandLight}  boxSize={10} margin='5px'/>
                         </Box>
                 </Box>
         )

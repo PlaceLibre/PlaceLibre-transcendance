@@ -19,8 +19,8 @@ const IconButtonSlider = (props) => {
     
     return (
         <Box 
-        Box display= 'flex' 
-        direction='row' 
+        display= 'flex' 
+        flexDirection='row' 
         alignItems='center' 
         marginBottom='10px'
         borderWidth='3px'

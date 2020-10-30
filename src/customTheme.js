@@ -56,7 +56,8 @@ const customTheme = extendTheme({
         fontSize: "sm",
         color: customThemeColor.colors.gray[700],
         lineHeight: "tall",
-        fontFamily: 'Ubuntu, sans-serif'
+        fontFamily: "body"
+
       },
       a: {
         color: "teal.500",
@@ -71,14 +72,14 @@ const customTheme = extendTheme({
       variants:{
         brandVariant:{
           tablist: {
-            borderBottom: "1px solid",
+            borderBottom: "2px solid",
             borderColor: "transparent",
           },
           tab: {
             color: customThemeColor.colors.brandDark,
-            borderBottom: "1px solid",
+            borderBottom: "2px solid",
             borderColor: "customThemeColor.colors.brandDark",
-            mb: "-1px",
+            mb: "-2px",
             _selected: {
               color: customThemeColor.colors.brand,
               borderColor: customThemeColor.colors.brand,
@@ -101,9 +102,9 @@ const customTheme = extendTheme({
     outline: ` 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,
   },
     fonts: {
-      body: "Ubuntu, sans-serif",
-      heading: "Ubuntu, sans-serif",
-      mono: "Menlo, monospace",
+      body: "Roboto, sans-serif",
+      heading: "Roboto, sans-serif",
+      mono: "Roboto, monospace",
     },
     fontSizes: {
       xs: "12px",

@@ -20,9 +20,9 @@ class Explore extends Component {
                     
                     <Tabs  variant='brandVariant' marginTop='20px' >
                         <TabList justifyContent= 'center'>
-                            <Tab >Explorer</Tab>
-                            <Tab>Mon espace</Tab>
-                            <Tab>Contributeurs</Tab>
+                            <Tab >EXPLORER</Tab>
+                            <Tab>MON ESPACE</Tab>
+                            <Tab>CONTRIBUTEURS</Tab>
                         </TabList>
 
                         <TabPanels >

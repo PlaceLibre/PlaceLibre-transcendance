@@ -12,6 +12,7 @@ import TitleWithIcon from './TitleWithIcon'
 import {intentionExemples} from './intentionExemples'
 import Favorite from './Favorite'
 import IconButtonSlider from './IconButtonSlider'
+import HeartLike from './HeartLike'
 
 
 
@@ -22,7 +23,6 @@ class IntentionCards extends Component {
     render () {
         const publishedDate = dateNumberString => {
             const date= new Date(parseInt(dateNumberString, 10))
-            console.log(dateNumberString,date)
             return date.toLocaleDateString()+" "+date.toLocaleTimeString()
         }
 
@@ -65,8 +65,9 @@ class IntentionCards extends Component {
                         direction='row'
                         justifyContent= 'space-between'
                         alignItems= 'center'>
-                            <Favorite/>
-                            <Icon as={BsFillHeartFill} color='brandDark' boxSize={5} marginLeft='10px'/>
+                            <Favorite boxSize={6}/>
+                            <Box marginRight='10px'/>
+                            <HeartLike boxSize={5}/>
                             <Text fontSize='md' fontWeight='bold' color='brandDark' marginLeft='0.5em'>{intentionExemples[key].likes}</Text>
                         </Box>
                         <Box 
