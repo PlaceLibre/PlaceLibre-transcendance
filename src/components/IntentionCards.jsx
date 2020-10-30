@@ -37,13 +37,17 @@ class IntentionCards extends Component {
             overflow='hidden'
             boxShadow='3px 3px 5px 3px #cccccc'
             >
-                <Box display= 'flex' direction='row' justifyContent= 'flex-end' alignItems= 'flex-end'
+                <Flex align='flex-end'
                 height='10em' 
                 backgroundImage={`url(assets/${intentionExemples[key].image})`} backgroundPosition='center' backgroundSize = 'cover'>
+                    <Flex bg='#FFFFFFBB' borderRadius='999px' width='30px' height='30px' align='center' justify='center' margin='10px'>
+                        <Icon as={ImPencil} color='brandDark'/>
+                    </Flex>
+                    <Spacer/>
                     <Avatar src='assets/avatar01.png' 
                     size='md' borderColor='white' borderWidth= '1px'
                     margin='0.5em'/>
-                </Box>
+                </Flex>
                 <Box padding='1em'>
                     <EditableText text={intentionExemples[key].text}/>
                     <Flex align='center' marginTop='1em'>

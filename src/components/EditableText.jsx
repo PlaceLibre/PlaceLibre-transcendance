@@ -14,8 +14,10 @@ function EditableText(props) {
           <IconButton icon={<CloseIcon />} onClick={onCancel} color='brandDark' boxSize={4} bg='transparent'/>
         </ButtonGroup>
       ) : (
-        <Flex justifyContent="left">
-          <IconButton size="sm" icon={<ImPencil />} onClick={onEdit} color='brandDark' boxSize={4} bg='transparent'/>
+        <Flex onClick={onEdit} justifyContent="left" marginTop='0.5em'>
+                <Icon as={ImPencil} color='brandDark' boxSize={4}/>
+                <Box marginRight='5px'/>
+                <Text color='brandDark' fontSize='xs'>Editer</Text>
         </Flex>
       )
     }
@@ -31,7 +33,7 @@ function EditableText(props) {
         {(props) => (
           <>
             <EditablePreview />
-            <EditableInput/>
+            <EditableInput as="textarea" rows="30" height='200px'/>
             <EditableControls {...props} />
           </>
         )}
