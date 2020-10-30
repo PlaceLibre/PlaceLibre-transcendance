@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import { Box, Image } from "@chakra-ui/core";
 import { Icon } from "@chakra-ui/core";
 import { Avatar, AvatarBadge } from "@chakra-ui/core";
-import {PhoneIcon, AddIcon, WarningIcon} from '@chakra-ui/icons'
 
 //own
 import { AdminIcon, HomeIcon } from './ownIcons'
@@ -52,7 +51,7 @@ class Header extends Component {
                             <Box 
                                 marginLeft='10px'
                                 color={colors.brandLight}                                >
-                                    <Box fontWeight='50' >Bienvenue!</Box>
+                                    <Box fontWeight='100' >Bienvenue!</Box>
                                     <Box fontWeight='600'>{userName}</Box>
                             </Box>
                         </Box>

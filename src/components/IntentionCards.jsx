@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 import { TalkIcon } from './ownIcons'
 import { Box, Heading, Text, Icon } from "@chakra-ui/core";
 import { Grid } from "@chakra-ui/core"
-import { BsFillHeartFill } from "react-icons/bs";
+import { BsFillHeartFill, BsPlusCircle } from "react-icons/bs";
+import { ImPlus } from "react-icons/im";
+
 import { Avatar, AvatarBadge } from "@chakra-ui/core"
 
 
 import TitleWithIcon from './TitleWithIcon'
 import {intentionExemples} from './intentionExemples'
 import Favorite from './Favorite'
+import IconButtonSlider from './IconButtonSlider'
 
 
 
@@ -78,8 +81,18 @@ class IntentionCards extends Component {
             </Box>)
 
         return (
-            <Box marginTop='3em' marginBottom='3em'>
-                <TitleWithIcon color='brandDark' iconComponent={TalkIcon} title='Intentions'/>
+            <Box 
+            marginTop='3em' 
+            marginBottom='3em'>
+                <Box 
+                display= 'flex'
+                direction='row'
+                justifyContent= 'space-between'
+                alignItems= 'center'
+                height='50px'>
+                    <TitleWithIcon color='brandDark' iconComponent={TalkIcon} title='Intentions'/>
+                    <IconButtonSlider icon={<Icon as={ImPlus} />} title='Créer nouveau'/>
+                </Box>
                 <Grid 
                 gridAutoFlow= 'row' 
                 templateColumns="repeat(2, 1fr)" gap={4}>
