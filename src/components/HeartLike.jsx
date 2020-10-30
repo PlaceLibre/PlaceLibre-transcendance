@@ -11,7 +11,7 @@ const HeartLike = (props) => {
       setStarred(!starred);
     }
   
-    return <Icon as={BsFillHeartFill} boxSize={props.boxSize} color={starred ? 'red.500' : 'brandDark'} onClick={handleClick} />
+    return <Icon as={BsFillHeartFill} boxSize={starred ? props.boxSize : props.boxSize-1} color={starred ? 'red.500' : 'brandDark'} onClick={handleClick} transition='200ms'/>
   }
 
   export default HeartLike

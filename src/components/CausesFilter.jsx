@@ -24,7 +24,7 @@ class CausesFilter extends Component {
 
         return (
             <Box marginTop='2em'>
-                <TitleWithIcon color='brandDark' iconComponent={AnchorIcon} title='Select a cause'/>
+                <TitleWithIcon color='brandDark' iconComponent={AnchorIcon} title='Selectionnez une ou plusieurs causes'/>
                 <Grid gridAutoFlow= 'column' templateRows="repeat(5, auto)" templateColumns="repeat(2, auto)" gap={2} >
                     {causesCheckboxes}
                 </Grid>

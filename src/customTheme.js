@@ -78,7 +78,7 @@ const customTheme = extendTheme({
           tab: {
             color: customThemeColor.colors.brandDark,
             borderBottom: "2px solid",
-            borderColor: "customThemeColor.colors.brandDark",
+            borderColor: customThemeColor.colors.brandDark,
             mb: "-2px",
             _selected: {
               color: customThemeColor.colors.brand,
@@ -97,6 +97,14 @@ const customTheme = extendTheme({
       
       },
     },
+    Checkbox:{ //https://github.com/chakra-ui/chakra-ui/blob/develop/packages/theme/src/components/checkbox.ts
+      baseStyle:{
+        control:{
+          borderColor: customThemeColor.colors.brandDark,
+
+        }
+      }
+    }
   },
   shadows:{
     outline: ` 0 0 2px 2px ${customThemeColor.colors.brandVariant[100]}`,

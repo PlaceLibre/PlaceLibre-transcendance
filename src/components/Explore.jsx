@@ -16,7 +16,8 @@ class Explore extends Component {
                 flex-direction='column'
                 justifyContent= 'center'
                 marginTop='80px'
-                marginLeft='150px'>
+                marginLeft='150px'
+                minHeight = '100vh'>
                     
                     <Tabs  variant='brandVariant' marginTop='20px' >
                         <TabList justifyContent= 'center'>
