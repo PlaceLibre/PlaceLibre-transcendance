@@ -142,8 +142,8 @@ const intentionExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: 'windturbine.jpg',
-        parents: [ cause_5 ],
-        children: [ challenge_1, challenge_2 ],
+        parents: [ 'cause_5' ],
+        children: [ 'challenge_1', 'challenge_2' ],
         likes: '123',
         versions:{
             0: {
@@ -166,7 +166,7 @@ const intentionExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: 'vegetables.jpg',
-        parents: [ cause_5 ],
+        parents: [ 'cause_5' ],
         children: [ ],
         likes: '123',
         versions:{
@@ -203,8 +203,8 @@ const challengeExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ intention_1 ],
-        children: [ solution_1, solution_2 ],
+        parents: [ 'intention_1' ],
+        children: [ 'solution_1', 'solution_2' ],
         likes: '123',
         versions:{
             0: {
@@ -227,7 +227,7 @@ const challengeExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ intention_1 ],
+        parents: [ 'intention_1' ],
         children: [ ],
         likes: '123',
         versions:{
@@ -254,9 +254,9 @@ const solutionExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ challenge_1 ],
-        childrenMonetization: [ monetization_1, monetization_2 ],
-        childrenBM: [ businessModel_1, businessModel_2 ]
+        parents: [ 'challenge_1' ],
+        childrenMonetization: [ 'monetization_1', 'monetization_2' ],
+        childrenBM: [ 'businessModel_1', 'businessModel_2' ],
         likes: '123',
         versions:{
             0: {
@@ -279,7 +279,7 @@ const solutionExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ challenge_1 ],
+        parents: [ 'challenge_1' ],
         children: [ ],
         likes: '123',
         versions:{
@@ -306,8 +306,8 @@ const monetizationExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ solution_1 ],
-        children: [ businessModel_1, businessModel_2 ],
+        parents: [ 'solution_1' ],
+        children: [ 'businessModel_1', 'businessModel_2' ],
         likes: '123',
         versions:{
             0: {
@@ -330,7 +330,7 @@ const monetizationExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ solution_1 ],
+        parents: [ 'solution_1' ],
         children: [ ],
         likes: '123',
         versions:{
@@ -357,7 +357,7 @@ const businessModelExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ solution_1 ],
+        parents: [ 'solution_1' ],
         children: [ ],
         likes: '123',
         versions:{
@@ -381,7 +381,7 @@ const businessModelExemples={
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
-        parents: [ solution_1 ],
+        parents: [ 'solution_1' ],
         children: [ ],
         likes: '123',
         versions:{
