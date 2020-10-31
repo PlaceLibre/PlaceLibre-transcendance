@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { TalkIcon } from './ownIcons'
 import { Box, Heading, Text, Icon, IconButton } from "@chakra-ui/core";
 import { Grid } from "@chakra-ui/core"
-import { BsFillHeartFill, BsPlusCircle } from "react-icons/bs";
+import { BsFillHeartFill, BsPlusCircle, BsImage } from "react-icons/bs";
 import { ImPlus, ImPencil } from "react-icons/im";
 import { Avatar, AvatarBadge } from "@chakra-ui/core"
 import { Flex, Spacer } from "@chakra-ui/core"
@@ -35,7 +35,7 @@ function IntentionCards () {
             height='10em' 
             backgroundImage={`url(assets/${intentionExemples[key].image})`} backgroundPosition='center' backgroundSize = 'cover'>
                 <Flex bg='#FFFFFFBB' borderRadius='999px' width='30px' height='30px' align='center' justify='center' margin='10px'>
-                    <Icon as={ImPencil} color='brandGray.700'/>
+                    <Icon as={BsImage} color='brandGray.700'/>
                 </Flex>
                 <Spacer/>
                 <Avatar src='assets/avatar01.png' 

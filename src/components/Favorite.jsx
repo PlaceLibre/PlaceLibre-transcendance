@@ -11,7 +11,7 @@ const Favorite = (props) => {
       setStarred(!starred);
     }
   
-    return <Icon as={BsStarFill} boxSize={props.boxSize} color={starred ? 'brand' : 'brandMiddle'} onClick={handleClick} />
+    return <Icon as={BsStarFill} boxSize={props.boxSize} color={starred ? 'brand.500' : 'brandGray.100'} onClick={handleClick} />
   }
 
   export default Favorite

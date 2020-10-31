@@ -1,6 +1,6 @@
 export const intentionExemples={
     intention1:{
-        text: "Phasellus faucibus volutpat nisi. Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+        text: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         causes: ["Alimentation", "Energie"],
         author: 'Alexandra Kisscool',
         authorImage: 'avatar01.PNG',

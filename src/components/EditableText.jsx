@@ -10,14 +10,14 @@ function EditableText(props) {
     function EditableControls({ isEditing, onSubmit, onCancel, onEdit }) {
       return isEditing ? (
         <ButtonGroup justifyContent="left" size="sm">
-          <IconButton icon={<CheckIcon />} onClick={onSubmit} color='brandDark' boxSize={4} bg='transparent'/>
-          <IconButton icon={<CloseIcon />} onClick={onCancel} color='brandDark' boxSize={4} bg='transparent'/>
+          <IconButton icon={<CheckIcon />} onClick={onSubmit} color='brandGray.700' boxSize={4} bg='transparent'/>
+          <IconButton icon={<CloseIcon />} onClick={onCancel} color='brandGray.700' boxSize={4} bg='transparent'/>
         </ButtonGroup>
       ) : (
         <Flex onClick={onEdit} justifyContent="left" marginTop='0.5em'>
-                <Icon as={ImPencil} color='brandDark' boxSize={4}/>
+                <Icon as={ImPencil} color='brandGray.700' boxSize={4}/>
                 <Box marginRight='5px'/>
-                <Text color='brandDark' fontSize='xs'>Editer</Text>
+                <Text color='brandGray.700' fontSize='xs'>Editer</Text>
         </Flex>
       )
     }
@@ -33,7 +33,7 @@ function EditableText(props) {
         {(props) => (
           <>
             <EditablePreview />
-            <EditableInput as="textarea" rows="30" height='200px'/>
+            <EditableInput as="textarea" rows="6" selectAllOnFocus='false'/>
             <EditableControls {...props} />
           </>
         )}
