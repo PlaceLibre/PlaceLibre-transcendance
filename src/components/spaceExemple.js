@@ -80,6 +80,13 @@ const causeExemples={
         children: [ 'intention 1', 'intention_2'],
         versions:{
             0: {
+                value: "Gouvernance",
+                date: '1603984209753',
+                userPseudo: 'timcoucou',
+                userEmail: 'timothee.couchoud@placelibre.org',
+                userKey: '38398242538923932824',
+            },
+            1: {
                 value: "Gouvernance et démocratie",
                 date: '1603984209753',
                 userPseudo: 'timcoucou',
@@ -250,7 +257,8 @@ const challengeExemples={
 }
 
 const solutionExemples={
-    solution_1: {
+    mysolution1_1604222139876: {
+        name: 'mysolution1',
         value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: [],
@@ -403,13 +411,142 @@ const businessModelExemples={
     },
 }
 
-
-
-export const spaceExemple ={
+const transcendance_1604303981511 = {
+    key: 'transcendance_1604303981511',
+    name: 'Transcendance-Joyaume',
+    spaceType: 'module',
+    admin:{
+        adminUsers:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+        },
+        members:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+            alexandra_kisscool_1604217029999: 'true'
+        },
+        archived: false,
+        parent:'host_1604261686725',
+        adoptedParents: [''], //members of adopted-parent-spaces can edit
+        sisterSpace:{
+            in:{ // members can see the subspaces of sister-space listed here. To do so the sister must give agreement in her 'out'
+                communityX: true,
+                communityY: true,
+            }, 
+            out:{ // members of sister space listed here can see own subspaces. To do so the sister must give agreement in her 'in'
+                communityX: true,
+            }, 
+        },
+        creation:{
+            date: '1603984209753',
+            userPseudo: 'timcoucou',
+            userEmail: 'timothee.couchoud@joyaume.org',
+            userKey: 'user_1604217026802',
+        },
+    },
     causes: causeExemples,
     intentions: intentionExemples,
     challenges: challengeExemples,
     solutions: solutionExemples,
     monetization: monetizationExemples,
     businessModel: businessModelExemples,
+}
+
+
+
+export const spaceExemple ={
+    key: 'joyaume_1604261686725',
+    name: 'Joyaume',
+    spaceType: 'community',
+    admin:{
+        adminUsers:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+        },
+        members:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+            alexandra_kisscool_1604217029999: 'true'
+        },
+        archived: false,
+        parent:'host_1604261686725',
+        adoptedParents: [''], //members of adopted-parent-spaces can edit
+        sisterSpace:{
+            in:{ // members can see the subspaces of sister-space listed here. To do so the sister must give agreement in her 'out'
+                communityX: true,
+                communityY: true,
+            }, 
+            out:{ // members of sister space listed here can see own subspaces. To do so the sister must give agreement in her 'in'
+                communityX: true,
+            }, 
+        },
+        design:{
+            logoUrl: '',
+            image: '',
+            colors:{
+                brand: 'put here the color variant...',
+                brandGray: 'put here the color variant...',
+            },
+            fontFamily: 'Ubuntu',
+        },
+        creation:{
+            date: '1603984209753',
+            userPseudo: 'timcoucou',
+            userEmail: 'timothee.couchoud@joyaume.org',
+            userKey: 'user_1604217026802',
+        },
+    },
+    transcendance:transcendance_1604303981511,
+    reliance: '',
+    chrysalide: '',
+    osmose: '',
+    concerto: '',
+}
+
+export const host_1604261680000 = {
+    key: 'host_1604261680000',
+    name: 'PlaceLibre',
+    spaceType: 'host',
+    admin:{
+        adminUsers:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+        },
+        members:{
+            timothee_couchoud_1604217026802: 'true',
+            yan_eperon_1604217020000: 'true',
+            alexandra_kisscool_1604217029999: 'true'
+        },
+        archived: false,
+        parent:'root',
+        adoptedParents: [''], //members of adopted-parent-spaces can edit
+        sisterSpace:{
+            in:{ 
+            }, 
+            out:{ 
+            }, 
+        },
+        design:{
+            logoUrl: '',
+            image: '',
+            colors:{
+                brand: {}, //put here the color variant...
+                brandGray: {}, //put here the color variant...
+            },
+            fontFamily: 'Ubuntu',
+        },
+        creation:{
+            date: '1603984209753',
+            userPseudo: 'timcoucou',
+            userEmail: 'timothee.couchoud@joyaume.org',
+            userKey: 'user_1604217026802',
+        },
+    },
+    subspaces:{
+        joyaume_1604261686725:spaceExemple,
+        communityX_1604303750800: {},
+        communityY_1604303750800: {},
+
+    }
+
 }

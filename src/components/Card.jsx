@@ -4,8 +4,6 @@ import { BsImage } from "react-icons/bs";
 import { Avatar, AvatarBadge } from "@chakra-ui/core"
 import { Flex, Spacer } from "@chakra-ui/core"
 
-
-import {intentionExemples} from './intentionExemples'
 import Favorite from './Favorite'
 import HeartLike from './HeartLike'
 import EditableText from './EditableText'
@@ -20,7 +18,6 @@ const Card = ({elementData}) => {
     }
 
     // get the last version
-    console.log('elementData=', elementData)
     const lastVersion= elementData.versions[Object.keys(elementData.versions)[Object.keys(elementData.versions).length - 1]]
 
     return (

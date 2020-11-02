@@ -33,7 +33,7 @@ function EditableText(props) {
         {(props) => (
           <>
             <EditablePreview />
-            <EditableInput as="textarea" rows="6" selectAllOnFocus='false'/>
+            <EditableInput as="textarea" rows="6"/>
             <EditableControls {...props} />
           </>
         )}

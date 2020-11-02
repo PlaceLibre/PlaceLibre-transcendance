@@ -22,7 +22,6 @@ const IconButtonSlider = (props) => {
         display= 'flex' 
         flexDirection='row' 
         alignItems='center' 
-        marginBottom='10px'
         borderWidth='3px'
         borderColor='brandGray.700'
         borderRadius='999px'
