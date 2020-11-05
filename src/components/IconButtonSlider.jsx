@@ -32,7 +32,7 @@ const IconButtonSlider = (props) => {
         onMouseOut = {onMouseOut}
         >
             {text}
-            {cloneElement(props.icon, {color:'brandGray.700', boxSize:'4'})}
+            {cloneElement(props.icon, {color:'brandGray.700', fill:'brandGray.700', boxSize:'4'})}
         </Box>
     )
 }
