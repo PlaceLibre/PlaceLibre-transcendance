@@ -9,15 +9,12 @@ import { Flex, Spacer } from "@chakra-ui/core"
 import TitleWithIcon from './TitleWithIcon'
 import IconButtonSlider from './IconButtonSlider'
 import Card from './Card'
-import ChallengeCards from './ChallengeCards'
 
 
 
 
-function IntentionCards ({transcendance}) { 
+function ChallengeCards ({transcendance, parentKey}) { 
     const [selectedCard, setSelectedCard] = useState('ALL')
-
-    const intentions = transcendance.intentions
 
     const handleClickSelection = function (e) {
         setSelectedCard(e.currentTarget.getAttribute('cardkey'))
@@ -27,11 +24,16 @@ function IntentionCards ({transcendance}) {
         setSelectedCard('ALL')
     }
 
-    const cardsAll = function () {
-        console.log(intentions)
+    const list= transcendance.intentions[parentKey].children
+    const challenges = {}
+    for (var i=0; i < list.length; i++) {
+        var challengeKey=list[i]
+        challenges[challengeKey]=transcendance.challenges[challengeKey]
+    }
 
-        const cards=Object.keys(intentions).map(key =>
-            <Card key={key} cardkey={key} elementData={intentions[key]} onClick={handleClickSelection}/>);
+    const cardsAll = function () {
+        const cards=Object.keys(challenges).map(key =>
+            <Card key={key} cardkey={key} elementData={challenges[key]} onClick={handleClickSelection}/>);
         
         return (
             <Grid gridAutoFlow= 'row' templateColumns="repeat(2, 1fr)" gap={4}>
@@ -41,7 +43,7 @@ function IntentionCards ({transcendance}) {
     }
 
     const cardSelected = function (){
-        return <Card key={selectedCard} elementData={intentions[selectedCard]}/>
+        return <Card key={selectedCard} elementData={challenges[selectedCard]}/>
     }
 
     return (
@@ -49,19 +51,17 @@ function IntentionCards ({transcendance}) {
         marginTop='3em' 
         marginBottom='3em'>
             <Flex align='center' height='50px'>
-                <TitleWithIcon color='brandGray.700' iconComponent={TalkIcon} title='Intentions'/>
+                <TitleWithIcon color='brandGray.700' iconComponent={TalkIcon} title='Challenges'/>
                 <Spacer/>
                 <IconButtonSlider icon={<Icon as={ImPlus}/>} title='Créer nouveau'/>
                 <Box marginRight='10px'/>
                 <SquaresIcon fill='brandGray.700' boxSize={8} onClick={handleClickDisplayAll}/>
             </Flex>
             { selectedCard =='ALL' ? cardsAll() : cardSelected()}
-            { selectedCard !== 'ALL' ? <ChallengeCards transcendance = {transcendance} parentKey={selectedCard}/> : ''}
         </Box>
         
     )
     
 }
 
-export default IntentionCards
-
+export default ChallengeCards

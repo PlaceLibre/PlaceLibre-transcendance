@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Box, Image } from "@chakra-ui/core";
+import { Box, Image, useToken } from "@chakra-ui/core";
 import { Icon } from "@chakra-ui/core";
 import { Avatar, AvatarBadge } from "@chakra-ui/core";
 
@@ -9,14 +9,15 @@ import colors from './colors'
 
 
 
-class Header extends Component {
-    render () {
+function Header () {
+
         const userName='Alexandra Kisscool'
         const userAvatarPath='assets/avatar01.png'
+        const [color1, color2] = useToken("colors", ['brandGray.700', 'brandGray.500'])
 
         return (
                 <Box 
-                    bg= "brandDark"
+                    bg={`linear-gradient(${color1}, ${color2})`}
                     display= 'flex'
                     direction='row'
                     justifyContent= 'space-between'
@@ -65,7 +66,6 @@ class Header extends Component {
                         </Box>
                 </Box>
         )
-    }
 }
 
 export default Header

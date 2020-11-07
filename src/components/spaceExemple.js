@@ -146,7 +146,7 @@ const causeExemples={
 
 const intentionExemples={
     intention_1: {
-        value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+        value: "intention_1 Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
         archived: false,
         image: 'windturbine.jpg',
         parents: [ 'cause_5' ],
@@ -161,7 +161,7 @@ const intentionExemples={
                 userKey: '38398242538923932824',
             },
             1: {
-                value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+                value: "intention_1 Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
                 date: '1603984209753',
                 userPseudo: 'timcoucou',
                 userEmail: 'timothee.couchoud@placelibre.org',
@@ -174,7 +174,7 @@ const intentionExemples={
         archived: false,
         image: 'vegetables.jpg',
         parents: [ 'cause_5' ],
-        children: [ ],
+        children: [ 'challenge_3' ],
         likes: '123',
         versions:{
             0: {
@@ -185,7 +185,7 @@ const intentionExemples={
                 userKey: '38398242538923932824',
             },
             1: {
-                value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+                value: "intention_2 Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
                 date: '1603984209753',
                 userPseudo: 'timcoucou',
                 userEmail: 'timothee.couchoud@placelibre.org',
@@ -207,7 +207,7 @@ exemple[Math.max(...new Int32Array(Object.keys(exemple)))]
 
 const challengeExemples={
     challenge_1: {
-        value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+        value: "Vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis? ",
         archived: false,
         image: [],
         parents: [ 'intention_1' ],
@@ -222,7 +222,7 @@ const challengeExemples={
                 userKey: '38398242538923932824',
             },
             1: {
-                value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+                value: "challenge_1 Vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis? ",
                 date: '1603984209753',
                 userPseudo: 'timcoucou',
                 userEmail: 'timothee.couchoud@placelibre.org',
@@ -246,7 +246,31 @@ const challengeExemples={
                 userKey: '38398242538923932824',
             },
             1: {
-                value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+                value: "challenge_2 Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+                date: '1603984209753',
+                userPseudo: 'timcoucou',
+                userEmail: 'timothee.couchoud@placelibre.org',
+                userKey: '38398242538923932824',
+            },
+        },
+    },
+    challenge_3: {
+        value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
+        archived: false,
+        image: [],
+        parents: [ 'intention_2' ],
+        children: [ ],
+        likes: '123',
+        versions:{
+            0: {
+                value: "Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra",
+                date: '1603984209753',
+                userPseudo: 'timcoucou',
+                userEmail: 'timothee.couchoud@placelibre.org',
+                userKey: '38398242538923932824',
+            },
+            1: {
+                value: "challenge_3 Phasellus faucibus volutpat nisi. \n Donec eget tincidunt mauris. Donec elementum nisl id tellus pharetra, vehicula scelerisque orci volutpat. Aliquam eleifend, elit quis posuere placerat, odio nulla hendrerit diam, tristique efficitur velit velit ut felis. Etiam id finibus mi. ",
                 date: '1603984209753',
                 userPseudo: 'timcoucou',
                 userEmail: 'timothee.couchoud@placelibre.org',
