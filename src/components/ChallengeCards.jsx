@@ -55,7 +55,7 @@ function ChallengeCards ({transcendance, parentKey}) {
                 <Spacer/>
                 <IconButtonSlider icon={<Icon as={ImPlus}/>} title='Créer nouveau'/>
                 <Box marginRight='10px'/>
-                <SquaresIcon fill='brandGray.700' boxSize={8} onClick={handleClickDisplayAll}/>
+                <SquaresIcon fill={selectedCard=='ALL'?'brandGray.700':'brandGray.400'} boxSize={8} onClick={handleClickDisplayAll}/>
             </Flex>
             { selectedCard =='ALL' ? cardsAll() : cardSelected()}
         </Box>
