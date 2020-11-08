@@ -24,6 +24,7 @@ function IntentionCards ({transcendance}) {
     const [selectedCard, setSelectedCard] = useState('ALL')
     const [creatingCard, setCreatingCard ] = useState(false)
     const [imageName, setImageName ] = useState('vegetables.jpg')
+    const [intentionValue, setIntentionValue] = useState('')
 
     const intentions = transcendance.intentions
 
@@ -71,9 +72,34 @@ function IntentionCards ({transcendance}) {
         setImageName(e.target.value)
     }
 
-    const creatingForm = function () {
-        console.log("creatingCard in creatingForm=",creatingCard)
+    const handleChangeIntentionValue = function (e) {
+        setIntentionValue(e.target.value)
+    }
 
+    const onSubmitNewIntention = function (e) {
+        const newIntention = {
+                archived: false,
+                image: imageName,
+                parents: [ 'cause_5' ],
+                children: [ ],
+                likes: '0',
+                versions:{
+                    0: {
+                        value: intentionValue,
+                        date: Date.now(),
+                        userPseudo: 'timcoucou',
+                        userEmail: 'timothee.couchoud@placelibre.org',
+                        userKey: '38398242538923932824',
+                    },
+                },
+        }
+        transcendance.intentions[`intention_${Date.now()}`]=newIntention
+        console.log("transcendance=",transcendance)
+        setCreatingCard(false)
+
+    }
+
+    const creatingForm = function () {
         return (
             <Flex direction='column'  bg='white'  borderRadius= '0.5em' overflow='hidden'
                 boxShadow='3px 3px 5px 3px #cccccc'
@@ -94,10 +120,10 @@ function IntentionCards ({transcendance}) {
                 </Flex>
 
                 <Stack spacing={3}>
-                    <Input as='textArea' minHeight='5em' maxHeight='5em' maxlength='300' focusBorderColor="brand.500" placeholder="Votre intention" />
+                    <Input value={intentionValue} onChange={handleChangeIntentionValue} as='textArea' minHeight='5em' maxHeight='5em' maxLength='300' focusBorderColor="brand.500" placeholder="Votre intention" />
                     <Input value={imageName} onChange={handleChangeImagename} placeholder="le nom de votre image ex: image.jpg" focusBorderColor="brand.500" />
                     <ButtonGroup justifyContent="center" size="sm">
-                        <IconButton icon={<CheckIcon />} onClick='' color='brandGray.700' boxSize={4} bg='transparent'/>
+                        <IconButton icon={<CheckIcon />} onClick={onSubmitNewIntention} color='brandGray.700' boxSize={4} bg='transparent'/>
                         <IconButton icon={<CloseIcon />} onClick={onCancel} color='brandGray.700' boxSize={4} bg='transparent'/>
                     </ButtonGroup>
                 </Stack>
